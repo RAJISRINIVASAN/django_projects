@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<title>Result</result>
+    <style>
+
+        <style>
+            table {
+               width: 50%;
+               margin: auto;
+               border-collapse: collapse;
+               border: 2px solid #333;
+               background-color: #f9f9f9;
+           }
+           
+           th, td {
+               padding: 10px;
+               border: 1px solid #ccc;
+               text-align: left;
+           }
+           
+           th {
+               background-color: #4CAF50;
+               color: white;
+           }
+           
+           input[type="text"], 
+           input[type="password"] {
+               width: 100%;
+               padding: 8px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+           }
+           
+           input[type="submit"] {
+               background-color: #4CAF50;
+               color: white;
+               padding: 10px 20px;
+               border: none;
+               cursor: pointer;
+               border-radius: 4px;
+           }
+           
+           input[type="submit"]:hover {
+               background-color: #45a049;
+           }
+           
+           h3 {
+               text-align: center;
+               margin: 10px 0;
+           }
+           
+         </style>
+    </style>
+</head>
+<body>
+{%block content%}
+
+<table class="center">
+<tr>
+
+   <th colspan="2">
+    <center>
+
+        view details
+    </center>
+
+   </th> 
+</tr>
+<tr>
+<th>name<td>{{Name}}</td></th>
+</tr>
+<tr>
+    <th>password<td>{{Password}}</td></th>
+    </tr>
+<tr>
+    <th>address<td>{{Address}}</td></th>
+</tr>
+<tr>
+    <th>Email<td>{{email}}</td></th>
+</tr>
+</table>
+
+{%endblock%}
+
+</body>
+
+</html>
